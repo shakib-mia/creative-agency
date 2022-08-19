@@ -175,3 +175,10 @@ footer .text-center {
   padding-bottom: 50px;
   margin-bottom: 0;
 }
+
+
+/* customer page styles */
+
+#customer-page .active {
+  color: green;
+}

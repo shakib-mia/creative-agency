@@ -6,9 +6,9 @@ const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg fixed-top pe-3" id="navbar">
       <div class="container py-1">
-        <a href="#">
+        <Link to="/">
           <img src={logo} id="logo" alt="" />
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
