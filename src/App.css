@@ -43,6 +43,9 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 body {
@@ -105,6 +108,7 @@ header p {
   background: #111430;
   padding: 107px 0;
   width: 100vw;
+  height: 100vh;
 }
 
 

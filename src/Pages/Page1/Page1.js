@@ -16,6 +16,7 @@ import carousel5 from "./../../images/carousel-5.png";
 import customer1 from "./../../images/customer-1.png";
 import customer2 from "./../../images/customer-2.png";
 import customer3 from "./../../images/customer-3.png";
+import Navbar from "../../components/Navbar";
 
 const Page1 = () => {
   window.addEventListener("scroll", () => {
@@ -25,8 +26,10 @@ const Page1 = () => {
       document.getElementById("navbar").style.background = "#FBD062";
     }
   });
+
   return (
     <div>
+      <Navbar></Navbar>
       <div className="header-bg">
         <Header></Header>
       </div>
@@ -184,7 +187,7 @@ const Page1 = () => {
         </div>
       </div>
 
-      <footer>
+      <footer id="contact">
         <div className="container">
           <div className="row row-cols-1 row-cols-lg-2">
             <div className="col">
