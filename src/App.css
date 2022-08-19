@@ -70,6 +70,7 @@ header {
 nav {
   width: 100vw;
   background: #FBD062;
+  transition: all 0.5s;
 }
 
 #logo {
@@ -92,11 +93,11 @@ header p {
 
 #services .col {
   border-radius: 10px;
+  transition: all 0.5s;
 }
 
 #services .col:hover {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s;
   cursor: pointer;
 }
 
@@ -123,4 +124,50 @@ header p {
 
 .owl-dot.active {
   background: #FBD062 !important;
+}
+
+#feedback p {
+  font-size: 16px !important;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+footer {
+  background-color: #FBD062;
+  padding-top: 83px;
+}
+
+footer h2 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 43px;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 24.5px;
+  margin-top: 32px;
+}
+
+footer input[type="text"] {
+  margin: 16px 0;
+}
+
+footer .form-control {
+  padding: 22px 30px;
+}
+
+footer a.btn-dark {
+  margin-top: 16px;
+}
+
+footer input,
+footer textarea {
+  border-radius: 4px !important;
+}
+
+footer .text-center {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  margin-bottom: 0;
 }

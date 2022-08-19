@@ -17,7 +17,7 @@ const Header = () => {
               Hire Us
             </a>
           </div>
-          <div className="col-12 col-lg-8 d-flex justify-content-end px-0">
+          <div className="col-12 col-lg-8 d-flex justify-content-end px-0 order-1">
             <img src={frame} className="img-fluid col-10" alt="" />
           </div>
         </div>

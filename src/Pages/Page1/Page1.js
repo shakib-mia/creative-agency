@@ -13,8 +13,18 @@ import carousel2 from "./../../images/carousel-2.png";
 import carousel3 from "./../../images/carousel-3.png";
 import carousel4 from "./../../images/carousel-4.png";
 import carousel5 from "./../../images/carousel-5.png";
+import customer1 from "./../../images/customer-1.png";
+import customer2 from "./../../images/customer-2.png";
+import customer3 from "./../../images/customer-3.png";
 
 const Page1 = () => {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 740) {
+      document.getElementById("navbar").style.background = "#fff";
+    } else {
+      document.getElementById("navbar").style.background = "#FBD062";
+    }
+  });
   return (
     <div>
       <div className="header-bg">
@@ -79,7 +89,7 @@ const Page1 = () => {
           <div className="col py-5">
             <img className="col-3" src={web_Mobile} alt="" />
             <h4 className="mt-4 mb-2">Web & Mobile design</h4>
-            <p className="px-5 mx-4">
+            <p className="px-lg-5 mx-lg-4">
               We craft stunning and amazing web UI, using a well drrafted UX to
               fit your product.
             </p>
@@ -87,7 +97,7 @@ const Page1 = () => {
           <div className="col py-5">
             <img className="col-3" src={graphic_mobile} alt="" />
             <h4 className="mt-4 mb-2">Graphic Design</h4>
-            <p className="px-5 mx-4">
+            <p className="px-lg-5 mx-lg-4">
               Amazing flyers, social media posts and brand representations that
               would make your brand stand out.
             </p>
@@ -95,7 +105,7 @@ const Page1 = () => {
           <div className="col py-5">
             <img className="col-3" src={web_dev} alt="" />
             <h4 className="mt-4 mb-2">Web Development</h4>
-            <p className="px-5 mx-4">
+            <p className="px-lg-5 mx-lg-4">
               With well written codes, we build amazing apps for all platforms,
               mobile and web apps in general.
             </p>
@@ -109,25 +119,111 @@ const Page1 = () => {
         </h2>
 
         <div class="owl-carousel">
-          <div className="ms-5 ps-5">
-            <img src={carousel1} alt="" />
+          <img src={carousel1} alt="" />
+
+          <img src={carousel2} alt="" />
+
+          <img src={carousel3} alt="" />
+
+          <img src={carousel4} alt="" />
+
+          <img src={carousel5} alt="" />
+        </div>
+      </div>
+
+      <div className="my-5 py-5 container" id="feedback">
+        <h2 className="text-center fw-bolder pb-5">
+          Clients <span className="text-success">Feedback</span>
+        </h2>
+        <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+          <div className="col p-4">
+            <div className="border rounded">
+              <div className="row align-items-center p-3">
+                <img src={customer1} alt="" className="col-4" />
+                <div className="col-8">
+                  <h3 className="fw-bold">Nash Patrik</h3>
+                  <h5 className="fw-bold">CEO, Manpol</h5>
+                </div>
+                <p className="col-12 mt-4">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quam, doloribus? Voluptate est dolore eaque veniam!
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src={carousel2} alt="" />
+          <div className="col p-4">
+            <div className="border rounded">
+              <div className="row align-items-center p-3">
+                <img src={customer2} alt="" className="col-4" />
+                <div className="col-8">
+                  <h3 className="fw-bold">Nash Patrik</h3>
+                  <h5 className="fw-bold">CEO, Manpol</h5>
+                </div>
+                <p className="col-12 mt-4">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quam, doloribus? Voluptate est dolore eaque veniam!
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src={carousel3} alt="" />
-          </div>
-          <div>
-            <img src={carousel4} alt="" />
-          </div>
-          <div>
-            <img src={carousel5} alt="" />
+          <div className="col p-4">
+            <div className="border rounded">
+              <div className="row align-items-center p-3">
+                <img src={customer3} alt="" className="col-4" />
+                <div className="col-8">
+                  <h3 className="fw-bold">Nash Patrik</h3>
+                  <h5 className="fw-bold">CEO, Manpol</h5>
+                </div>
+                <p className="col-12 mt-4">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quam, doloribus? Voluptate est dolore eaque veniam!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div id="feedback"></div>
+      <footer>
+        <div className="container">
+          <div className="row row-cols-1 row-cols-lg-2">
+            <div className="col">
+              <div className="col-12 col-lg-8">
+                <h2>Let us handle your project, professionally.</h2>
+                <p className="footer-text">
+                  With well written codes, we build amazing apps for all
+                  platforms, mobile and web apps in general.
+                </p>
+              </div>
+            </div>
+            <div className="col">
+              <input
+                type="email"
+                className="form-control"
+                placeholder="Your Email Address"
+              />
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Your name / Company's Name"
+              />
+              <textarea
+                name=""
+                id=""
+                className="form-control"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+
+              <button className="btn btn-dark px-5 text-white mt-2">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <p className="text-center">copyright Orange labs 2020</p>
+      </footer>
     </div>
   );
 };

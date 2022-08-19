@@ -3,7 +3,7 @@ import logo from "../images/logos/logo.png";
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg fixed-top pe-3">
+    <nav class="navbar navbar-expand-lg fixed-top pe-3" id="navbar">
       <div class="container py-1">
         <a href="#">
           <img src={logo} id="logo" alt="" />
