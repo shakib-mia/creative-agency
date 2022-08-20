@@ -180,5 +180,44 @@ footer .text-center {
 /* customer page styles */
 
 #customer-page .active {
-  color: green;
+  color: #009444;
+}
+
+#customer-page a {
+  text-decoration: none;
+  color: black;
+  padding-top: 19px;
+}
+
+#customer-page h4 {
+  padding-left: 8px;
+  font-size: 16px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(0, 0, 0, 0.3) !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(97, 97, 97);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(97, 97, 97);
+}
+
+#uploadBtn {
+  background-color: #DEFFED;
+  color: #009444;
+  border: 1px solid #009444;
+  border-radius: 4px;
+}
+
+#order .form-control:focus {
+  box-shadow: 0 0 1px #333;
 }
