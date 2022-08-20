@@ -84,15 +84,15 @@ const Page1 = () => {
         </div>
       </div>
 
-      <div className="container py-5" id="services">
+      <div className="container-fluid py-5 mb-5 px-5" id="services">
         <h2 className="text-center fw-bolder py-5">
           Provide Awesome <span className="text-success">Services</span>
         </h2>
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center text-center">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 gap-4 justify-content-center text-center">
           <div className="col py-5">
             <img className="col-3" src={web_Mobile} alt="" />
             <h4 className="mt-4 mb-2">Web & Mobile design</h4>
-            <p className="px-lg-5 mx-lg-4">
+            <p className="px-5 mx-auto">
               We craft stunning and amazing web UI, using a well drrafted UX to
               fit your product.
             </p>
@@ -100,7 +100,7 @@ const Page1 = () => {
           <div className="col py-5">
             <img className="col-3" src={graphic_mobile} alt="" />
             <h4 className="mt-4 mb-2">Graphic Design</h4>
-            <p className="px-lg-5 mx-lg-4">
+            <p className="px-lg-5 mx-auto">
               Amazing flyers, social media posts and brand representations that
               would make your brand stand out.
             </p>
@@ -108,7 +108,7 @@ const Page1 = () => {
           <div className="col py-5">
             <img className="col-3" src={web_dev} alt="" />
             <h4 className="mt-4 mb-2">Web Development</h4>
-            <p className="px-lg-5 mx-lg-4">
+            <p className="col-8 mx-auto">
               With well written codes, we build amazing apps for all platforms,
               mobile and web apps in general.
             </p>
