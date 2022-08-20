@@ -218,7 +218,7 @@ footer .text-center {
   border-radius: 4px;
 }
 
-#order .form-control:focus {
+.form-control:focus {
   box-shadow: 0 0 1px #333;
 }
 
@@ -242,4 +242,8 @@ footer .text-center {
   font-weight: 300;
   line-height: 28px;
   letter-spacing: 0.4px;
+}
+
+textarea {
+  resize: none;
 }

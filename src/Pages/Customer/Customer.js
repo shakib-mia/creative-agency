@@ -1,14 +1,19 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
+import logo from "./../../images/logos/logo.png";
 
 const Customer = () => {
   return (
     <div id="customer-page">
       <div className="row">
         <div className="col-2 vh-100">
-          <Link to="/">
-            <h3 className="pb-5 px-5 fw-bolder mt-3">Logo Here</h3>
+          <Link to="/" className="d-flex">
+            <img
+              src={logo}
+              alt="logo"
+              className="img-fluid col-8 mx-auto pb-5"
+            />
           </Link>
           <NavLink to="/customer/" className="d-flex align-items-center mx-5">
             <svg
