@@ -1,53 +1,49 @@
 import React from "react";
 
-const Order = () => {
+const AdminAddService = () => {
   const handleChange = (e) => {
     document.getElementById("uploadBtn").innerText = e.name;
   };
 
   return (
-    <div id="order">
+    <div>
       <div className="bg-white d-flex justify-content-between align-items-center px-5">
-        <h3 className="fw-bolder py-3">Order</h3>
-        <h5 className="fw-bolder py-3">User Name</h5>
+        <h3 className="fw-bolder py-3">Add Service</h3>
+        <h5 className="fw-bolder py-3">Admin Name</h5>
       </div>
 
-      <div className="px-5 pt-5">
-        <form className="mt-5 col-12 col-lg-6">
-          <input
-            type="text"
-            className="form-control rounded-0 p-3 my-3 border-0"
-            placeholder="Your Name / Company Name"
-          />
-          <input
-            type="email"
-            className="form-control rounded-0 p-3 my-3 border-0"
-            placeholder="Your Email Address"
-          />
-          <input
-            type="text"
-            className="form-control rounded-0 p-3 my-3 border-0"
-            placeholder="Graphic Design"
-          />
+      <div className="bg-white my-5 mx-3 p-5 rounded-3">
+        <form className="row row-cols-2" action="">
+          <div>
+            <label htmlFor="service-title" className="mb-2">
+              Service Title
+            </label>
+            <input
+              type="text"
+              className="form-control rounded-1"
+              id="service-title"
+              placeholder="Enter Title"
+            />
 
-          <textarea
-            rows="3"
-            className="form-control rounded-0 p-3 my-3 border-0"
-            placeholder="Project Details"
-          ></textarea>
+            <label htmlFor="description" className="mt-4 mb-2">
+              Description
+            </label>
+            <textarea
+              rows={3}
+              type="text"
+              className="form-control rounded-1"
+              id="description"
+              placeholder="Description"
+            />
+          </div>
 
-          <div className="row row-cols-1 row-cols-md-2 pb-3 pb-lg-0 align-items-center">
-            <div className="col">
-              <input
-                type="text"
-                className="form-control rounded-0 p-3 my-3 border-0"
-                placeholder="Price"
-              />
-            </div>
+          <div>
+            <h6 className="fw-bold">Icon</h6>
+
             <div className="col">
               <label
                 htmlFor="uploadFile"
-                className="btn w-100 p-3 fw-bold"
+                className="btn mt-1 px-4 fw-bold"
                 id="uploadBtn"
               >
                 <svg
@@ -67,7 +63,7 @@ const Order = () => {
                     d="M7.646 4.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V14.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3z"
                   />
                 </svg>
-                Upload Project Files
+                Upload Image
               </label>
 
               <input
@@ -78,17 +74,10 @@ const Order = () => {
               />
             </div>
           </div>
-          <div className="row row-cols-4">
-            <div className="col">
-              <button className="w-100 btn btn-dark py-2 rounded-1">
-                Send
-              </button>
-            </div>
-          </div>
         </form>
       </div>
     </div>
   );
 };
 
-export default Order;
+export default AdminAddService;

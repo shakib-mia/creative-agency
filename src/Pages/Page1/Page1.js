@@ -17,6 +17,7 @@ import customer1 from "./../../images/customer-1.png";
 import customer2 from "./../../images/customer-2.png";
 import customer3 from "./../../images/customer-3.png";
 import Navbar from "../../components/Navbar";
+import ReactOwlCarousel from "react-owl-carousel";
 
 const Page1 = () => {
   window.addEventListener("scroll", () => {
@@ -121,17 +122,23 @@ const Page1 = () => {
           Here are some of <span className="text-success">our works</span>
         </h2>
 
-        <div class="owl-carousel">
-          <img src={carousel1} alt="" />
-
-          <img src={carousel2} alt="" />
-
-          <img src={carousel3} alt="" />
-
-          <img src={carousel4} alt="" />
-
-          <img src={carousel5} alt="" />
-        </div>
+        <ReactOwlCarousel autoWidth={true} center={true}>
+          <div>
+            <img src={carousel1} alt="" />
+          </div>
+          <div>
+            <img src={carousel2} alt="" />
+          </div>
+          <div>
+            <img src={carousel3} alt="" />
+          </div>
+          <div>
+            <img src={carousel4} alt="" />
+          </div>
+          <div>
+            <img src={carousel5} alt="" />
+          </div>
+        </ReactOwlCarousel>
       </div>
 
       <div className="my-5 py-5 container" id="feedback">
