@@ -12,8 +12,8 @@ const AdminAddService = () => {
         <h5 className="fw-bolder py-3">Admin Name</h5>
       </div>
 
-      <div className="bg-white my-5 mx-3 p-5 rounded-3">
-        <form className="row row-cols-2" action="">
+      <div className="my-5 mx-3 p-5 rounded-3">
+        <form className="bg-white p-5 row row-cols-2 me-1 rounded-2" action="">
           <div>
             <label htmlFor="service-title" className="mb-2">
               Service Title
@@ -75,6 +75,12 @@ const AdminAddService = () => {
             </div>
           </div>
         </form>
+
+        <div className="text-end pt-3 me-1">
+          <a href="#" className="btn btn-success text-white py-2 px-4">
+            Submit
+          </a>
+        </div>
       </div>
     </div>
   );
