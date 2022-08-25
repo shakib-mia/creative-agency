@@ -254,6 +254,10 @@ footer .text-center {
   letter-spacing: 0.4px;
 }
 
+select {
+  cursor: pointer;
+}
+
 textarea {
   resize: none;
 }
