@@ -122,7 +122,7 @@ const Page1 = () => {
           Here are some of <span className="text-success">our works</span>
         </h2>
 
-        <ReactOwlCarousel autoWidth={true} center={true}>
+        <ReactOwlCarousel autoWidth={true} center={true} stagePadding={10}>
           <div>
             <img src={carousel1} alt="" />
           </div>

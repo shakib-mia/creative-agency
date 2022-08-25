@@ -11,7 +11,11 @@ const MakeAdmin = () => {
       <div id="make-admin" className="bg-white m-5 p-5 rounded-4">
         <h6>Email</h6>
         <form action="" className="row col-8 ps-2">
-          <input type="text" className="col-8 py-1" />
+          <input
+            type="text"
+            className="col-8 py-1"
+            placeholder="Enter An Email Address Here"
+          />
           <div className="col-4">
             <button className="btn btn-success py-2 px-4">Submit</button>
           </div>
