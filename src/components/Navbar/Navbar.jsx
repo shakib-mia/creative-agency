@@ -11,10 +11,10 @@ const Navbar = () => {
         showNav ? gsap.fromTo(listRef.current, {
             top: '-20rem'
         }, {
-            top: '74px',
+            top: '62px',
             duration: 0.5
         }) : gsap.fromTo(listRef.current, {
-            top: '74px'
+            top: '62px'
         }, {
             top: '-20rem',
             duration: 0.5
@@ -24,7 +24,7 @@ const Navbar = () => {
     return (
         <nav className='flex justify-between items-center py-[20px] px-[20px] lg:px-[105px] bg-[#FBD062] z-10'>
             <aside>
-                <img src={logo} className='w-1/2' alt="" />
+                <img src={logo} className='w-8/12 lg:w-1/2' alt="" />
             </aside>
             <ul className='gap-[40px] items-center hidden lg:flex'>
                 <li>Home</li>
@@ -38,11 +38,11 @@ const Navbar = () => {
 
             <div className='w-fit lg:hidden'>
                 <label htmlFor="check">
-                    <img src={hamburger} className='w-1/6 ml-auto' alt="hamburger" />
+                    <img src={hamburger} className='w-1/4 ml-auto' alt="hamburger" />
                     <input type="checkbox" id="check" className='hidden' onChange={e => setShowNav(e.target.checked)} />
                 </label>
 
-                <ul className='flex flex-col gap-[40px] items-center absolute w-full left-0 text-right bg-[#FBD062] top-[-20rem] pb-3 z-0' ref={listRef}>
+                <ul className='flex flex-col gap-[40px] items-center absolute w-full left-0 text-right bg-[#FBD062] top-[-20rem] py-5 z-[-1]' ref={listRef}>
                     <li>Home</li>
                     <li>Our Portfolio</li>
                     <li>Our Team</li>
