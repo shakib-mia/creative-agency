@@ -48,7 +48,7 @@ const Navbar = () => {
                     <li>Our Team</li>
                     <li>Contact Us</li>
                     <li>
-                        <button className='bg-[#111430] px-[45px] py-[10px] text-white rounded-[5px]'>Login</button>
+                        <button className='btn-dark'>Login</button>
                     </li>
                 </ul>
             </div>

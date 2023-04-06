@@ -7,3 +7,7 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+.btn-dark {
+  @apply bg-[#111430] px-[45px] py-[10px] text-white rounded-[5px]
+}
